@@ -67,6 +67,7 @@ pipeline {
   }
   post {
     always {
+      mail(to: 'brandon.rojas3159@gmail.com', subject: 'El pipeline se ejecuto exitosamente. Notificacion por correo.', body: 'Todo bien compañero')
       echo 'El pipeline se ejecuto Exitosamente'
     }
 
