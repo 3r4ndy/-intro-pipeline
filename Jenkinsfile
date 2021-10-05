@@ -65,4 +65,10 @@ pipeline {
   environment {
     OUT_PATH = './tmp'
   }
+  post {
+    always {
+      echo 'El pipeline se ejecuto Exitosamente'
+    }
+
+  }
 }
