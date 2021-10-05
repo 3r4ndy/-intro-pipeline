@@ -36,6 +36,9 @@ pipeline {
     }
 
     stage('test: Functional') {
+      when {
+        branch 'test'
+      }
       steps {
         sh 'echo "Paso de test: Functional"'
       }
