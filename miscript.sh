@@ -13,10 +13,12 @@ add_a_user()
   echo passwd $USER $PASSWORD
   echo "Added user $USER ($COMMENTS) with pass $PASSWORD"
 }
+
 ###
 # cuerpo principal del script comienza aqui 
 echo "comienzo del script............"
 add_a_user bob sanchez Bob el constructor
-add_a_user brandon badpassword brandon tiene sueño 
-add_a_user erika eperalta solo un ejemplo
+add_a_user alex badpassword Alex Pumas gol 
+add_a_user bilko peorpassword Bilko just an example
 echo "el final de nuestro script......"
+echo "Paz y amor"
