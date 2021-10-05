@@ -32,7 +32,7 @@ pipeline {
     stage('test: Integration & Quality') {
       steps {
         sh 'echo "Paso de test: Integration & Quality"'
-        echo 'miscript.sh'
+        sh 'miscript.sh'
       }
     }
 
@@ -71,7 +71,6 @@ pipeline {
   }
   post {
     always {
-      mail(to: 'brandon.rojas3159@gmail.com', subject: 'El pipeline se ejecuto exitosamente. Notificacion por correo.', body: 'Todo bien compañero')
       echo 'El pipeline se ejecuto Exitosamente'
     }
 
