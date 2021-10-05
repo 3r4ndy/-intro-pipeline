@@ -32,6 +32,7 @@ pipeline {
     stage('test: Integration & Quality') {
       steps {
         sh 'echo "Paso de test: Integration & Quality"'
+        sh 'chmod -xr ./miscript.sh'
         sh './miscript.sh'
       }
     }
