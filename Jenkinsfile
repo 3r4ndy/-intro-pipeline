@@ -70,5 +70,13 @@ pipeline {
       echo 'El pipeline se ejecuto Exitosamente'
     }
 
+    failure {
+      echo 'Ocurrio un Error en el pipeline, que dios nos ampare'
+    }
+
+    aborted {
+      echo 'No termino de corre el pipeline, fue forzado a terminar'
+    }
+
   }
 }
