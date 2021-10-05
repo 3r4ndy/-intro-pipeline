@@ -7,7 +7,7 @@ add_a_user()
   PASSWORD=$2
   shift;shift;
   #Having shifted twice, the rest is now coments...
-  COMMENTS=$0
+  COMMENTS=$@
   echo"Adding user $USER......."
   echo useradd -c "$COMMENTS" $USER
   echo passwd $USER $PASSWORD
