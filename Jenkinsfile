@@ -71,7 +71,8 @@ pipeline {
     }
 
     failure {
-      echo 'Ocurrio un Error en el pipeline, que dios nos ampare'
+      mail(to: 'brandon.rojas3159@gmail.com', subject: 'Error en el pipeline... que dios nos ampare.', body: 'Error de capa 8')
+      echo 'Ocurrió un Error en el pipeline, que dios nos ampare'
     }
 
     aborted {
